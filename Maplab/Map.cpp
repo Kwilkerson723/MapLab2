@@ -22,5 +22,5 @@ void Map::Move(Location *newLocation)
 std::string Map::GetPathBackToHome()
 {
 
-	return "TODO: Implement this";
+	//return "TODO: Implement this";
 }

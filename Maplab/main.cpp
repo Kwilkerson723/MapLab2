@@ -47,7 +47,9 @@ void GoNorth(Map &map)
 		system("cls");
 		cout << "You haven't been here before, enter a name for this place: ";
 		string name;
-		cin >> name;
+		cin.ignore();
+		getline(cin, name);
+		//cin >> name;
 		newLocation = new Location(name);
 		cout << "This place is now called: " + name << endl;
 
@@ -69,7 +71,9 @@ void GoEast(Map &map)
 		system("cls");
 		cout << "You haven't been here before, enter a name for this place: ";
 		string name;
-		cin >> name;
+		cin.ignore();
+		getline(cin, name);
+		//cin >> name;
 		newLocation = new Location(name);
 		cout << "This place is now called: " + name << endl;
 
@@ -92,7 +96,9 @@ void GoSouth(Map &map)
 		system("cls");
 		cout << "You haven't been here before, enter a name for this place: ";
 		string name;
-		cin >> name;
+		cin.ignore();
+		getline(cin, name);
+		//cin >> name;
 		newLocation = new Location(name);
 		cout << "This place is now called: " + name << endl;
 
@@ -115,6 +121,7 @@ void GoWest(Map &map)
 		system("cls");
 		cout << "You haven't been here before, enter a name for this place: ";
 		string name;
+		cin.ignore();
 		getline(cin, name);
 		//cin >> name;
 		newLocation = new Location(name);
