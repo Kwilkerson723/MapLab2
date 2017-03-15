@@ -9,7 +9,7 @@ private:
 public:
 	Map(std::string startLocationName);
 	~Map();
-
+	
 	Location * CurrentLocation = nullptr;
 	std::string GetPathBackToHome();
 	void Move(Location *newLocation);

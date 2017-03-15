@@ -1,0 +1,52 @@
+Array
+-indexed
+
+Vector 
+-indexed
+-push/pop front/back
+
+Stack
+-peek 
+-push/popback
+has to go in order
+can only push/pop from the back 
+FILO first in last out
+
+Queue
+-peek push back pop front
+its a line front to back
+front pops back pushes 
+FIFO First in First out
+
+//all of these structures derive from arrays
+
+always initalize pointers or the compiler will pick a random space in memory
+
+project 2
+mapLab
+if you havent been somewhere you can name the place
+we want to go indefinatly in any direction 
+we want the program to remember the places you've named
+
+//get bank lab and map lab and resolve the to do statements
+implement GetPathBackToHome()
+how?
+follow path created back?
+log path and show path?
+show all map locations? // could be ineffective once it gets to large
+give directions one space at a time?
+
+//USE a stack, push on the stack where ever you've been 
+//makes sense to use a stack becasue the first place you see is home
+//pop.back until you reach home
+//print all locations you have been backwards until you get home
+Next thing-------------------------
+HowDidIGetHere
+//use Queue push back and pop front.
+
+teleport home? //no but could be interesting
+
+
+implement south,east,west
+
+

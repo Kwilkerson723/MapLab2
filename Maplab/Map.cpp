@@ -5,6 +5,7 @@
 Map::Map(std::string startLocationName)
 {
 	CurrentLocation = new Location(startLocationName);
+	
 }
 
 
@@ -20,5 +21,6 @@ void Map::Move(Location *newLocation)
 
 std::string Map::GetPathBackToHome()
 {
+
 	return "TODO: Implement this";
 }
