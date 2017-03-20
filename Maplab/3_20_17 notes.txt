@@ -1,0 +1,137 @@
+Map Lab(3 todo items) //how did I get here? queue is extra credit 
+
+Bank lab(3 todo items) 
+Map Lab (hash patch)
+
+
+
+
+Abstraction 
+-a term which means building more complex things on less complex things
+
+a string is an array where each element has a char value and a pointer to the next item
+
+
+----------------
+class	        |
+----------------
+char* 		|	
+char*	1st 	|
+	2nd	|
+	3rd	|
+----------------
+
+
+
+
+----------------------------
+stack | Queue | Hash Table |         //stack and queue are simple vectors
+----------------------------
+Vector                     |	    //Vector is an array that can expand indefinetly 
+----------------------------
+	      Array        |         
+----------------------------        // bottom to top 
+Pointer  | Class           |        // levels of abstraction 
+----------------------------
+
+
+
+to find something on the heap you need a reference 
+stacks have value 
+
+//try creating a stack and queue using only pointers
+
+
+
+
+Map Lab 
+ 
+West/East 
+new.x = old.x +- 1
+new.y = old.y
+
+North/South
+new.x= old.x 
+new.y = old.y +- 1
+
+
+
+
+
+Hash Table //?
+key|Value
+----------		// hash is a way of representing what we want to store
+0,0|home
+----------
+0,1|S1
+----------      each entry should only be in here once
+1,-1|SE1
+----------
+1,0|E1
+----------
+
+hash Algorithm 
+
+"x" + ","  + "y"
+ 
+"1,0"  x=1
+
+last piece of project 2 
+map lab 
+a map needs a hash table 
+#include <unordered_map> // term map means mapping keys to values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
