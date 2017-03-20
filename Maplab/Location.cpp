@@ -2,7 +2,7 @@
 
 
 
-Location::Location(std::string name,int x,int y) : _name(name),
+Location::Location(std::string name,int x,int y) : _name(name)
 {
 }
 

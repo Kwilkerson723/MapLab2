@@ -10,7 +10,8 @@ void GoWest(Map &map);
 
 int main()
 {
-	
+	unordered_map<int, string> worldMap; //example, not sure yet how to store coordinates, as a string or as a two ints
+
 	auto map = Map("Home");
 	int choice = -1;
 	while (choice != 0)
@@ -52,7 +53,7 @@ void GoNorth(Map &map)
 		cin.ignore();
 		getline(cin, name);
 		//cin >> name;
-		newLocation = new Location(name);
+		newLocation = new Location(name,map.CurrentLocation->x,map.CurrentLocation->y+1); //figure out how to add this to a unordered map,key and value
 		cout << "This place is now called: " + name << endl;
 
 	}
@@ -76,7 +77,7 @@ void GoEast(Map &map)
 		cin.ignore();
 		getline(cin, name);
 		//cin >> name;
-		newLocation = new Location(name);
+		newLocation = new Location(name, map.CurrentLocation->x+1, map.CurrentLocation->y);
 		cout << "This place is now called: " + name << endl;
 
 	}
@@ -101,7 +102,7 @@ void GoSouth(Map &map)
 		cin.ignore();
 		getline(cin, name);
 		//cin >> name;
-		newLocation = new Location(name);
+		newLocation = new Location(name, map.CurrentLocation->x, map.CurrentLocation->y-1);
 		cout << "This place is now called: " + name << endl;
 
 	}
@@ -126,7 +127,7 @@ void GoWest(Map &map)
 		cin.ignore();
 		getline(cin, name);
 		//cin >> name;
-		newLocation = new Location(name);
+		newLocation = new Location(name, map.CurrentLocation->x-1, map.CurrentLocation->y);
 		cout << "This place is now called: " + name << endl;
 
 	}
