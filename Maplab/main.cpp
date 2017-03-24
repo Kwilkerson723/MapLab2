@@ -8,16 +8,17 @@ void GoNorth(Map &map);
 void GoSouth(Map &map);
 void GoEast(Map &map);
 void GoWest(Map &map);
+void PathHome(Map &map);
 
 int main()
 {
 	unordered_map<string, string> worldMap; //example, not sure yet how to store coordinates, as a string or as a two ints
 	//store x and y in a string with a comma
 	//second string should be the name of the location
-	// check to see if locations exist if it doesnt exist add it to the hash table
+	// check to see if locations exist if it doesnt exist add it to the hash table 
 	/*table.insert("0,0", myLocPointer);
 	table.insert("0,1", myLocPointer); ect 	*/
-	worldMap.
+	//worldMap.
 
 	auto map = Map("Home");
 	int choice = -1;
@@ -40,7 +41,7 @@ int main()
 		case 3: GoEast(map); break;
 		case 4: GoSouth(map); break;
 		case 5: GoWest(map); break;
-		case 6: system("cls");  cout << map.GetPathBackToHome() << endl; break;
+		case 6: system("cls");  cout << PathHome << endl;  break;
 		default: cout << "Enter a valid option"; break;
 		}
 		system("pause");
@@ -146,4 +147,19 @@ void GoWest(Map &map)
 	map.Move(newLocation);
 	return;
 	//TODO: Implement This
+}
+
+void PathHome(Map &map)
+{
+	
+	while (!map.path.empty())
+	{
+		
+		cout << map.path.top()->DisplayLocationInfo();
+		map.path.pop();
+	
+	
+	}
+
+	return;
 }
