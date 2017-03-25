@@ -12,7 +12,7 @@ void PathHome(Map &map);
 
 int main()
 {
-	unordered_map<string, string> worldMap; //example, not sure yet how to store coordinates, as a string or as a two ints
+	//unordered_map<string, string> worldMap; //example
 	//store x and y in a string with a comma
 	//second string should be the name of the location
 	// check to see if locations exist if it doesnt exist add it to the hash table 
@@ -155,7 +155,7 @@ void PathHome(Map &map)
 	while (!map.path.empty())
 	{
 		
-		cout << map.path.top()->DisplayLocationInfo();
+		cout << map.path.top()->DisplayLocationInfo() << endl; 
 		map.path.pop();
 	
 	
